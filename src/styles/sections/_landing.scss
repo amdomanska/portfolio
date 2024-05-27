@@ -1,0 +1,24 @@
+.landing {
+  background-color: $white;
+  background-image: url("../../components/assets/landing-bg.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: $black;
+  text-align: center;
+
+  .content {
+    .logo {
+      position: absolute;
+      top: 2rem;
+      left: 3rem;
+    }
+
+    .role {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+    }
+  }
+}

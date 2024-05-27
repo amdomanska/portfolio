@@ -1,0 +1,38 @@
+.skills {
+  background-color: $dark-blue;
+  background-image: url("../../components/assets/skills-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+
+  .table {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 9.375rem;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        margin-bottom: 2rem;
+        text-align: center;
+        height: 104px;
+      }
+
+      .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+          margin: 0.55rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

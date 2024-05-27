@@ -1,0 +1,128 @@
+body {
+  margin: 0; }
+
+.App {
+  display: block; }
+  .App .section {
+    box-sizing: border-box;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 9.375rem;
+    overflow: scroll; }
+    .App .section .content {
+      display: block;
+      scroll-behavior: smooth; }
+      .App .section .content .header {
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 9.375rem;
+        align-items: baseline; }
+        .App .section .content .header .dot {
+          margin-right: .5rem; }
+
+h1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  text-transform: uppercase; }
+
+h2 {
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 52px;
+  text-transform: uppercase; }
+
+h3 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  /* 127.778% */ }
+
+h4 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  /* 150% */ }
+
+h5 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.5px; }
+
+h6 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.35px; }
+
+p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.35px; }
+
+.landing {
+  background-color: #F2F2F2;
+  background-image: url("../../components/assets/landing-bg.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #080926;
+  text-align: center; }
+  .landing .content .logo {
+    position: absolute;
+    top: 2rem;
+    left: 3rem; }
+  .landing .content .role {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; }
+
+.skills {
+  background-color: #1D5A73;
+  background-image: url("../../components/assets/skills-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #F2F2F2; }
+  .skills .table {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 9.375rem; }
+    .skills .table > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .skills .table > div h2 {
+        margin-bottom: 2rem;
+        text-align: center;
+        height: 104px; }
+      .skills .table > div .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .skills .table > div .skills h3 {
+          margin: 0.55rem;
+          text-align: center; }
+
+/*# sourceMappingURL=App.css.map */

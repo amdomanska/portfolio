@@ -1,0 +1,30 @@
+body {
+  margin: 0
+}
+
+.App {
+  display: block;
+
+  .section {
+    box-sizing: border-box;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 9.375rem;
+    overflow: scroll;
+    .content {
+      display: block;
+      scroll-behavior: smooth;
+      .header {
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 9.375rem;
+        align-items: baseline;
+        .dot {
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+}
