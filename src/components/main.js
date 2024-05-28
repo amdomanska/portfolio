@@ -5,7 +5,6 @@ import logo from "./assets/logo.svg";
 
 
 export const Main = () => {
-    console.log(window.scrollY)
     return (
         <>
             <img src={logo} className="logo" alt="AMD logo"/>
