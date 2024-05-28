@@ -1,5 +1,6 @@
 import logo from "../assets/logo.svg"
 import line from "../assets/line.svg"
+import {LandingBg} from "../pages/landing-bg";
 
 export const Landing = () => {
     return (
@@ -14,6 +15,7 @@ export const Landing = () => {
                 </p>
                 <h3>I turn front-end expertise <br/> into captivating UI experiences</h3>
             </div>
+            <LandingBg />
         </div>
     )
 }

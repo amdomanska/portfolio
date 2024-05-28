@@ -2,10 +2,22 @@ body {
   margin: 0
 }
 
+@keyframes upAndDown {
+  0%, 40% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7.5px); // Adjust the value to control the height of the bounce
+  }
+  60%, 100% {
+    transform: translateY(0);
+  }
+}
+
 .App {
   display: block;
-
   .section {
+    position: relative;
     box-sizing: border-box;
     height: 100vh;
     min-height: 100vh;
@@ -19,10 +31,11 @@ body {
         display: flex;
         position: relative;
         top: 0;
-        left: 9.375rem;
+        left: 4.5rem;
         align-items: baseline;
         .dot {
           margin-right: .5rem;
+          animation: upAndDown 3s ease-in-out infinite;
         }
       }
     }

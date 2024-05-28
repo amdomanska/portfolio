@@ -1,0 +1,28 @@
+svg {
+  contain: paint;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@keyframes bubble {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+}
+
+@for $i from 1 through 76 {
+  .bubble:nth-of-type(#{$i}) {
+    animation: bubble random(5) * 5 + s linear infinite;
+    transform-box: fill-box;
+    transform-origin: 50%;
+    transition-delay: random(5) * 4 + s;
+    animation-delay: random(5) * 4 + s;
+  }
+}

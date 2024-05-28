@@ -1,0 +1,32 @@
+.projects {
+  &-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: 75vh;
+    margin: auto;
+    border: 1px solid rgba($dark-blue, .2);
+    border-radius: 50%;
+
+    .project {
+      &-title {
+        text-align: center;
+      }
+      .tags {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: -2rem;
+
+        .tag {
+          font-family: "Julius Sans One", sans-serif;
+          color: $red;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
