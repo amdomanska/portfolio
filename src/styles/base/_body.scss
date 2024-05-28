@@ -16,26 +16,41 @@ body {
 
 .App {
   display: block;
+
+  .logo {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    z-index: 1000;
+  }
+
   .section {
     position: relative;
-    box-sizing: border-box;
     height: 100vh;
     min-height: 100vh;
     max-height: 100vh;
     padding: 9.375rem;
-    overflow: scroll;
-    .content {
-      display: block;
-      scroll-behavior: smooth;
-      .header {
-        display: flex;
-        position: relative;
-        top: 0;
-        left: 4.5rem;
-        align-items: baseline;
-        .dot {
-          margin-right: .5rem;
-          animation: upAndDown 3s ease-in-out infinite;
+    overflow: hidden;
+    box-sizing: border-box;
+    .wrapper {
+      max-height: calc(100vh - 18.75rem);
+      overflow: scroll;
+      .content {
+        display: block;
+        scroll-behavior: smooth;
+        height: calc(200vh - 37.5rem);
+
+        .header {
+          display: flex;
+          position: relative;
+          top: 0;
+          left: 4.5rem;
+          align-items: baseline;
+
+          .dot {
+            margin-right: .5rem;
+            animation: upAndDown 3s ease-in-out infinite;
+          }
         }
       }
     }

@@ -1,6 +1,6 @@
 .landing {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  //padding-left: 0 !important;
+  //padding-right: 0 !important;
   background-color: $white;
   #landing_bg {
     position: absolute;
@@ -13,12 +13,6 @@
   text-align: center;
 
   .content {
-    .logo {
-      position: absolute;
-      top: 2rem;
-      left: 3rem;
-    }
-
     .role {
       display: inline-flex;
       justify-content: center;
