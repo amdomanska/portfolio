@@ -7,13 +7,25 @@
     height: 75vh;
     width: 75vh;
     margin: auto;
-    border: 1px solid rgba($dark-blue, .2);
-    border-radius: 50%;
+    //border: 1px solid rgba($dark-blue, .2);
+    //border-radius: 50%;
+
+    .hover-this {
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        span {
+          pointer-event: none;
+          transition: transform 0.1s linear;
+        }
+      }
+
 
     .project {
       &-title {
         text-align: center;
       }
+
       .tags {
         display: flex;
         flex-direction: row;
@@ -28,5 +40,19 @@
         }
       }
     }
+  }
+
+  .cursor {
+    pointer-events: none;
+    position: fixed;
+    padding: 0.3rem;
+    background-color: $white;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease;
+  }
+
+  .hover-this:hover ~ .cursor {
+    transform: translate(-50%, -50%) scale(8);
   }
 }

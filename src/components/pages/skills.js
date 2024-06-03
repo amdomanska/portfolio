@@ -1,12 +1,7 @@
-import { useEffect } from "react";
-import dot from "../assets/dot.svg"
-
 export const Skills = () => {
 
     return (
-        <div className="section skills">
-            <div className="content">
-                <span className="header"><img src={dot} className="dot" alt=""/><h4>What I do well</h4></span>
+            <div className="skills">
                 <div className="table">
                     <div className="ui_design">
                         <h2>ui design</h2>
@@ -32,6 +27,5 @@ export const Skills = () => {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }

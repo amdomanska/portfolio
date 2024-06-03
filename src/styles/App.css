@@ -1,5 +1,6 @@
 body {
-  margin: 0; }
+  margin: 0;
+  cursor: none; }
 
 @keyframes upAndDown {
   0%, 40% {
@@ -22,23 +23,30 @@ body {
     max-height: 100vh;
     padding: 9.375rem;
     overflow: hidden;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    transition: background 0.5s ease-in-out; }
+    .App .section .header {
+      display: flex;
+      position: relative;
+      top: 0;
+      left: 4.5rem;
+      align-items: baseline; }
+      .App .section .header .dot {
+        margin-right: .5rem;
+        animation: upAndDown 3s ease-in-out infinite; }
+      .App .section .header-landing, .App .section .header-project {
+        color: #080926; }
+      .App .section .header-skills {
+        color: #F2F2F2; }
     .App .section .wrapper {
       max-height: calc(100vh - 18.75rem);
-      overflow: scroll; }
+      overflow-y: scroll;
+      overflow-x: hidden;
+      scroll-behavior: smooth; }
       .App .section .wrapper .content {
-        display: block;
-        scroll-behavior: smooth;
-        height: calc(200vh - 37.5rem); }
-        .App .section .wrapper .content .header {
-          display: flex;
-          position: relative;
-          top: 0;
-          left: 4.5rem;
-          align-items: baseline; }
-          .App .section .wrapper .content .header .dot {
-            margin-right: .5rem;
-            animation: upAndDown 3s ease-in-out infinite; }
+        display: block; }
+        .App .section .wrapper .content-end {
+          height: 100vh; }
 
 h1 {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -102,540 +110,539 @@ svg {
   100% {
     opacity: 0;
     transform: translateY(-300px); } }
-.bubble:nth-of-type(1) {
+.bubble:first-of-type {
   animation: bubble 10s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 8s; }
+  transition-delay: 0s;
+  animation-delay: 0s; }
 
 .bubble:nth-of-type(2) {
-  animation: bubble 20s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 16s; }
-
-.bubble:nth-of-type(3) {
-  animation: bubble 25s linear infinite;
+  animation: bubble 10s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 16s;
-  animation-delay: 4s; }
+  animation-delay: 3s; }
+
+.bubble:nth-of-type(3) {
+  animation: bubble 20s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(4) {
-  animation: bubble 15s linear infinite;
+  animation: bubble 20s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 16s; }
+  transition-delay: 16s;
+  animation-delay: 3s; }
 
 .bubble:nth-of-type(5) {
-  animation: bubble 15s linear infinite;
+  animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 20s; }
+  transition-delay: 8s;
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(6) {
   animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 20s; }
+  transition-delay: 8s;
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(7) {
-  animation: bubble 15s linear infinite;
+  animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 16s;
-  animation-delay: 4s; }
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(8) {
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 1s; }
+
+.bubble:nth-of-type(9) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 1s; }
+
+.bubble:nth-of-type(10) {
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 1s; }
+
+.bubble:nth-of-type(11) {
   animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 8s; }
+  transition-delay: 16s;
+  animation-delay: 2s; }
 
-.bubble:nth-of-type(9) {
-  animation: bubble 20s linear infinite;
+.bubble:nth-of-type(12) {
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 3s; }
+
+.bubble:nth-of-type(13) {
+  animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 16s;
   animation-delay: 4s; }
 
-.bubble:nth-of-type(10) {
-  animation: bubble 20s linear infinite;
+.bubble:nth-of-type(14) {
+  animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 4s;
-  animation-delay: 16s; }
+  animation-delay: 2s; }
 
-.bubble:nth-of-type(11) {
+.bubble:nth-of-type(15) {
   animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 8s; }
+  transition-delay: 4s;
+  animation-delay: 2s; }
 
-.bubble:nth-of-type(12) {
-  animation: bubble 20s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 16s;
-  animation-delay: 12s; }
-
-.bubble:nth-of-type(13) {
+.bubble:nth-of-type(16) {
   animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 12s; }
+  transition-delay: 12s;
+  animation-delay: 2s; }
 
-.bubble:nth-of-type(14) {
+.bubble:nth-of-type(17) {
   animation: bubble 10s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 20s;
-  animation-delay: 8s; }
-
-.bubble:nth-of-type(15) {
-  animation: bubble 5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 16s;
-  animation-delay: 16s; }
-
-.bubble:nth-of-type(16) {
-  animation: bubble 15s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 8s;
-  animation-delay: 12s; }
-
-.bubble:nth-of-type(17) {
-  animation: bubble 5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 20s; }
+  animation-delay: 4s; }
 
 .bubble:nth-of-type(18) {
-  animation: bubble 15s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 20s; }
-
-.bubble:nth-of-type(19) {
-  animation: bubble 25s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 8s; }
-
-.bubble:nth-of-type(20) {
-  animation: bubble 25s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 16s;
-  animation-delay: 8s; }
-
-.bubble:nth-of-type(21) {
   animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 12s;
-  animation-delay: 12s; }
+  animation-delay: 2s; }
+
+.bubble:nth-of-type(19) {
+  animation: bubble 10s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 3s; }
+
+.bubble:nth-of-type(20) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 4s; }
+
+.bubble:nth-of-type(21) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 3s; }
 
 .bubble:nth-of-type(22) {
   animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 8s; }
+  transition-delay: 16s;
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(23) {
-  animation: bubble 15s linear infinite;
+  animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 16s;
-  animation-delay: 8s; }
+  transition-delay: 12s;
+  animation-delay: 3s; }
 
 .bubble:nth-of-type(24) {
   animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 16s; }
+  transition-delay: 8s;
+  animation-delay: 3s; }
 
 .bubble:nth-of-type(25) {
-  animation: bubble 15s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 16s; }
-
-.bubble:nth-of-type(26) {
-  animation: bubble 20s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 12s; }
-
-.bubble:nth-of-type(27) {
-  animation: bubble 20s linear infinite;
+  animation: bubble 10s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 16s;
   animation-delay: 4s; }
 
-.bubble:nth-of-type(28) {
+.bubble:nth-of-type(26) {
   animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 8s; }
+  transition-delay: 16s;
+  animation-delay: 1s; }
+
+.bubble:nth-of-type(27) {
+  animation: bubble 15s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 4s; }
+
+.bubble:nth-of-type(28) {
+  animation: bubble 20s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 3s; }
 
 .bubble:nth-of-type(29) {
   animation: bubble 10s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 16s;
-  animation-delay: 12s; }
+  transition-delay: 12s;
+  animation-delay: 2s; }
 
 .bubble:nth-of-type(30) {
+  animation: bubble 20s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 20s;
+  animation-delay: 1s; }
+
+.bubble:nth-of-type(31) {
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 4s;
+  animation-delay: 3s; }
+
+.bubble:nth-of-type(32) {
   animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 16s;
-  animation-delay: 20s; }
-
-.bubble:nth-of-type(31) {
-  animation: bubble 20s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 20s; }
-
-.bubble:nth-of-type(32) {
-  animation: bubble 10s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 4s;
   animation-delay: 4s; }
 
 .bubble:nth-of-type(33) {
-  animation: bubble 15s linear infinite;
+  animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 20s;
-  animation-delay: 4s; }
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(34) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 4s; }
+
+.bubble:nth-of-type(35) {
   animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 8s; }
+  transition-delay: 8s;
+  animation-delay: 4s; }
 
-.bubble:nth-of-type(35) {
-  animation: bubble 10s linear infinite;
+.bubble:nth-of-type(36) {
+  animation: bubble 20s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 12s;
-  animation-delay: 20s; }
+  animation-delay: 2s; }
 
-.bubble:nth-of-type(36) {
+.bubble:nth-of-type(37) {
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 3s; }
+
+.bubble:nth-of-type(38) {
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 1s; }
+
+.bubble:nth-of-type(39) {
+  animation: bubble 15s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 4s;
+  animation-delay: 4s; }
+
+.bubble:nth-of-type(40) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 4s; }
+
+.bubble:nth-of-type(41) {
+  animation: bubble 15s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 8s;
+  animation-delay: 2s; }
+
+.bubble:nth-of-type(42) {
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 8s;
+  animation-delay: 2s; }
+
+.bubble:nth-of-type(43) {
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 3s; }
+
+.bubble:nth-of-type(44) {
   animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 16s;
-  animation-delay: 16s; }
-
-.bubble:nth-of-type(37) {
-  animation: bubble 15s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 8s;
-  animation-delay: 4s; }
-
-.bubble:nth-of-type(38) {
-  animation: bubble 10s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 8s;
-  animation-delay: 4s; }
-
-.bubble:nth-of-type(39) {
-  animation: bubble 20s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 4s; }
-
-.bubble:nth-of-type(40) {
-  animation: bubble 10s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 8s; }
-
-.bubble:nth-of-type(41) {
-  animation: bubble 5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 8s;
-  animation-delay: 16s; }
-
-.bubble:nth-of-type(42) {
-  animation: bubble 20s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 12s; }
-
-.bubble:nth-of-type(43) {
-  animation: bubble 5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 16s; }
-
-.bubble:nth-of-type(44) {
-  animation: bubble 25s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 4s;
   animation-delay: 4s; }
 
 .bubble:nth-of-type(45) {
-  animation: bubble 10s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 12s; }
-
-.bubble:nth-of-type(46) {
-  animation: bubble 15s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 12s; }
-
-.bubble:nth-of-type(47) {
-  animation: bubble 10s linear infinite;
+  animation: bubble 20s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 4s;
   animation-delay: 4s; }
 
-.bubble:nth-of-type(48) {
+.bubble:nth-of-type(46) {
   animation: bubble 20s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 16s; }
+  transition-delay: 20s;
+  animation-delay: 3s; }
 
-.bubble:nth-of-type(49) {
+.bubble:nth-of-type(47) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 4s; }
+
+.bubble:nth-of-type(48) {
   animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 20s; }
+  transition-delay: 20s;
+  animation-delay: 1s; }
+
+.bubble:nth-of-type(49) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 8s;
+  animation-delay: 4s; }
 
 .bubble:nth-of-type(50) {
   animation: bubble 20s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 12s; }
+  transition-delay: 16s;
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(51) {
-  animation: bubble 10s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 8s; }
-
-.bubble:nth-of-type(52) {
-  animation: bubble 15s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 4s; }
-
-.bubble:nth-of-type(53) {
   animation: bubble 25s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 20s; }
-
-.bubble:nth-of-type(54) {
-  animation: bubble 25s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 8s; }
-
-.bubble:nth-of-type(55) {
-  animation: bubble 20s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 16s;
-  animation-delay: 4s; }
-
-.bubble:nth-of-type(56) {
-  animation: bubble 10s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 8s;
-  animation-delay: 12s; }
-
-.bubble:nth-of-type(57) {
-  animation: bubble 5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 12s; }
-
-.bubble:nth-of-type(58) {
-  animation: bubble 15s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 12s; }
-
-.bubble:nth-of-type(59) {
-  animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 4s;
   animation-delay: 4s; }
+
+.bubble:nth-of-type(52) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 1s; }
+
+.bubble:nth-of-type(53) {
+  animation: bubble 15s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 3s; }
+
+.bubble:nth-of-type(54) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 4s;
+  animation-delay: 2s; }
+
+.bubble:nth-of-type(55) {
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 3s; }
+
+.bubble:nth-of-type(56) {
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 8s;
+  animation-delay: 2s; }
+
+.bubble:nth-of-type(57) {
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 1s; }
+
+.bubble:nth-of-type(58) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 8s;
+  animation-delay: 4s; }
+
+.bubble:nth-of-type(59) {
+  animation: bubble 10s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 2s; }
 
 .bubble:nth-of-type(60) {
   animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 8s;
+  transition-delay: 12s;
   animation-delay: 4s; }
 
 .bubble:nth-of-type(61) {
+  animation: bubble 20s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 3s; }
+
+.bubble:nth-of-type(62) {
   animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 16s;
-  animation-delay: 8s; }
+  animation-delay: 4s; }
 
-.bubble:nth-of-type(62) {
+.bubble:nth-of-type(63) {
   animation: bubble 10s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 20s;
-  animation-delay: 16s; }
-
-.bubble:nth-of-type(63) {
-  animation: bubble 5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 16s; }
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(64) {
+  animation: bubble 15s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 4s;
+  animation-delay: 4s; }
+
+.bubble:nth-of-type(65) {
   animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 20s;
-  animation-delay: 4s; }
-
-.bubble:nth-of-type(65) {
-  animation: bubble 5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 8s; }
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(66) {
-  animation: bubble 15s linear infinite;
+  animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 8s;
-  animation-delay: 16s; }
+  transition-delay: 16s;
+  animation-delay: 3s; }
 
 .bubble:nth-of-type(67) {
   animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 16s; }
+  transition-delay: 8s;
+  animation-delay: 2s; }
 
 .bubble:nth-of-type(68) {
-  animation: bubble 15s linear infinite;
+  animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 12s; }
+  transition-delay: 16s;
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(69) {
-  animation: bubble 20s linear infinite;
+  animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 20s;
-  animation-delay: 20s; }
+  animation-delay: 4s; }
 
 .bubble:nth-of-type(70) {
-  animation: bubble 5s linear infinite;
+  animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 12s;
-  animation-delay: 12s; }
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(71) {
   animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 16s;
-  animation-delay: 16s; }
+  animation-delay: 2s; }
 
 .bubble:nth-of-type(72) {
-  animation: bubble 10s linear infinite;
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 4s;
+  animation-delay: 4s; }
+
+.bubble:nth-of-type(73) {
+  animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 16s;
   animation-delay: 4s; }
-
-.bubble:nth-of-type(73) {
-  animation: bubble 10s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 8s;
-  animation-delay: 8s; }
 
 .bubble:nth-of-type(74) {
   animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 4s; }
+  transition-delay: 12s;
+  animation-delay: 2s; }
 
 .bubble:nth-of-type(75) {
-  animation: bubble 5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 8s;
-  animation-delay: 16s; }
-
-.bubble:nth-of-type(76) {
-  animation: bubble 25s linear infinite;
+  animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 16s;
-  animation-delay: 16s; }
+  animation-delay: 2s; }
+
+.bubble:nth-of-type(76) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 3s; }
 
 .landing {
-  background-color: #F2F2F2;
   color: #080926;
   text-align: center; }
   .landing #landing_bg {
@@ -644,15 +651,13 @@ svg {
     left: 0;
     width: 100vw;
     height: 25%; }
-  .landing .content .role {
+  .landing .role {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 3rem; }
 
 .skills {
-  background-color: #1D5A73;
-  background-image: url("../../components/assets/skills-bg.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -685,9 +690,13 @@ svg {
   align-items: center;
   height: 75vh;
   width: 75vh;
-  margin: auto;
-  border: 1px solid rgba(29, 90, 115, 0.2);
-  border-radius: 50%; }
+  margin: auto; }
+  .projects-list .hover-this {
+    transition: all 0.3s ease;
+    cursor: pointer; }
+    .projects-list .hover-this span {
+      pointer-event: none;
+      transition: transform 0.1s linear; }
   .projects-list .project-title {
     text-align: center; }
   .projects-list .project .tags {
@@ -700,5 +709,15 @@ svg {
       font-family: "Julius Sans One", sans-serif;
       color: #D91414;
       text-transform: uppercase; }
+.projects .cursor {
+  pointer-events: none;
+  position: fixed;
+  padding: 0.3rem;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: transform 0.3s ease; }
+.projects .hover-this:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(8); }
 
 /*# sourceMappingURL=App.css.map */

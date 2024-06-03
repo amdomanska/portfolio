@@ -1,5 +1,6 @@
 body {
-  margin: 0
+  margin: 0;
+  cursor: none;
 }
 
 @keyframes upAndDown {
@@ -32,25 +33,41 @@ body {
     padding: 9.375rem;
     overflow: hidden;
     box-sizing: border-box;
+    transition: background 0.5s ease-in-out;
+
+    .header {
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 4.5rem;
+        align-items: baseline;
+
+        .dot {
+          margin-right: .5rem;
+          animation: upAndDown 3s ease-in-out infinite;
+        }
+
+        &-landing,
+        &-project {
+          color: $black;
+        }
+
+        &-skills {
+          color: $white;
+        }
+      }
+
     .wrapper {
       max-height: calc(100vh - 18.75rem);
-      overflow: scroll;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+
       .content {
         display: block;
-        scroll-behavior: smooth;
-        height: calc(200vh - 37.5rem);
 
-        .header {
-          display: flex;
-          position: relative;
-          top: 0;
-          left: 4.5rem;
-          align-items: baseline;
-
-          .dot {
-            margin-right: .5rem;
-            animation: upAndDown 3s ease-in-out infinite;
-          }
+        &-end {
+          height: 100vh;
         }
       }
     }
