@@ -1,11 +1,13 @@
 import {Landing} from "./pages/landing"
 import {Skills} from "./pages/skills"
 import {Projects} from "./pages/projects"
-import logo from "./assets/logo.svg";
-import {LandingBg} from "./pages/landing-bg";
+import {LandingBg} from "./elements/landing-bg";
 import skillsBg from './assets/skills-bg.svg'; // Ensure the correct path to the background image
 import {useEffect, useRef, useState} from "react";
 import dot from "./assets/dot.svg";
+import {colors} from "./elements/colors"
+import {Logo} from "./elements/logo";
+import {ContactSection} from "./elements/contactSection";
 
 export const Main = () => {
     const [currentSection, setCurrentSection] = useState(null);
@@ -69,19 +71,19 @@ const getHeader = () => {
         switch (currentSection) {
             case 'landing':
                 return {
-                    backgroundColor: '#F2F2F2',
+                    backgroundColor: colors.white,
                     position: 'relative',
                 };
             case 'skills':
                 return {
-                    backgroundColor: '#1D5A73',
+                    backgroundColor: colors.darkBlue,
                     backgroundImage: `url(${skillsBg})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                 };
             case 'projects':
                 return {
-                    backgroundColor: '#F2F2F2',
+                    backgroundColor: colors.white,
                 };
             default:
                 return {};
@@ -90,9 +92,10 @@ const getHeader = () => {
 
     return (
         <div className="section" style={getSectionStyles()}>
+            <ContactSection/>
+            <Logo currentSection={currentSection}/>
             { getHeader() }
             <div className="wrapper" ref={wrapperRef}>
-                <img src={logo} className="logo" alt="AMD logo"/>
                 <div className="content">
                     <Landing/>
                     <div className="content-end" ref={landingEndRef}></div>
