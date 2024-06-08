@@ -1,10 +1,8 @@
 import React, {useState} from 'react';
-import linkedinIcon from '../assets/linkedin.svg';
-import emailIcon from '../assets/mail.svg';
-import copyIcon from '../assets/copy.svg';
-import phoneIcon from '../assets/phone.svg';
+import {colors} from "./colors";
+import {Icon} from "./icon";
 
-export const ContactSection = () => {
+export const ContactSection = ({currentSection}) => {
     const [emailVisible, setEmailVisible] = useState(false);
     const [phoneVisible, setPhoneVisible] = useState(false);
     const [emailCopied, setEmailCopied] = useState(false);
@@ -30,38 +28,23 @@ export const ContactSection = () => {
 
     return (
         <div className="contact-section">
-            <div className="contact-item">
+            <div className="contact-item hover-this">
                 <a href="https://www.linkedin.com/in/amdomanska" target="_blank" title="LinkedIn account link"
                    className="contact-link">
-                    <img src={linkedinIcon} alt="LinkedIn icon" className="contact-icon"/>
+                    <Icon type={"linkedIn"} currentSection={currentSection}/>
                 </a>
             </div>
-            <div className="contact-item">
-                <img
-                    src={emailIcon}
-                    aria-label="click to see my email account"
-                    className="contact-icon"
-                    onClick={() => setEmailVisible(!emailVisible)}
-                />
+            <div className="contact-item hover-this">
+                <Icon type={"email"} handleClick = {() => setEmailVisible(!emailVisible)} currentSection={currentSection}/>
                 {emailVisible && (
-                    <div className="contact-detail">
+                    <div className="contact-detail hover-this">
                         <span>{emailCopied ? 'Email address copied to your clipboard' : email_coded}</span>
-                        <img
-                            src={copyIcon}
-                            title="copy my email account"
-                            className="copy-icon"
-                            onClick={copyToClipboard}
-                        />
+                        <Icon type={"copy"} handleClick={copyToClipboard} currentSection={currentSection}/>
                     </div>
                 )}
             </div>
-            <div className="contact-item">
-                <img
-                    src={phoneIcon}
-                    title="show my phone number"
-                    className="contact-icon"
-                    onClick={() => setPhoneVisible(!phoneVisible)}
-                />
+            <div className="contact-item hover-this">
+               <Icon type={"phone"} handleClick={() => setPhoneVisible(!phoneVisible)} currentSection={currentSection}/>
                 {phoneVisible && (
                     <div className="contact-detail">
                         <span>{phoneNumber}</span>

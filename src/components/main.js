@@ -8,6 +8,7 @@ import dot from "./assets/dot.svg";
 import {colors} from "./elements/colors"
 import {Logo} from "./elements/logo";
 import {ContactSection} from "./elements/contactSection";
+import {Cursor} from "./elements/cursor";
 
 export const Main = () => {
     const [currentSection, setCurrentSection] = useState(null);
@@ -92,7 +93,7 @@ const getHeader = () => {
 
     return (
         <div className="section" style={getSectionStyles()}>
-            <ContactSection/>
+            <ContactSection currentSection={currentSection}/>
             <Logo currentSection={currentSection}/>
             { getHeader() }
             <div className="wrapper" ref={wrapperRef}>
@@ -103,6 +104,7 @@ const getHeader = () => {
                     <div className="content-end" ref={skillsEndRef}></div>
                     <Projects/>
                 </div>
+                <Cursor/>
             </div>
             {currentSection === 'landing' && <LandingBg/>}
         </div>
