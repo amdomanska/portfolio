@@ -1,21 +1,11 @@
 import React, {useState} from 'react';
-import {colors} from "./colors";
 import {Icon} from "./icon";
+import {email, email_coded, phoneNumber} from "./contactDetails";
 
 export const ContactSection = ({currentSection}) => {
     const [emailVisible, setEmailVisible] = useState(false);
     const [phoneVisible, setPhoneVisible] = useState(false);
     const [emailCopied, setEmailCopied] = useState(false);
-
-    // The repo is private, I don't want my data to leak, hopefully that will help.
-    const email_name = "amdomanska";
-    const email_domain = "yahoo.com";
-    const email_coded = email_name + "[at]" + email_domain;
-    const email = email_name + "@" + email_domain;
-    const countryCode = "+44";
-    const phoneNumber_sec1 = "7541";
-    const phoneNumber_sec2 = "751181"
-    const phoneNumber = [countryCode, phoneNumber_sec1, phoneNumber_sec2].join(" ");
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText(email).then(() => {
@@ -26,6 +16,22 @@ export const ContactSection = ({currentSection}) => {
         });
     };
 
+    const switchContactView = (visibleSection) => {
+        switch (visibleSection) {
+            case 'phone':
+                setPhoneVisible(prevState => !phoneVisible);
+                setEmailVisible(false);
+                break;
+            case 'email':
+                setPhoneVisible(false);
+                setEmailVisible(prevState => !emailVisible);
+                break;
+            default:
+                setPhoneVisible(false);
+                setEmailVisible(false);
+        }
+    }
+
     return (
         <div className="contact-section">
             <div className="contact-item hover-this">
@@ -35,7 +41,7 @@ export const ContactSection = ({currentSection}) => {
                 </a>
             </div>
             <div className="contact-item hover-this">
-                <Icon type={"email"} handleClick = {() => setEmailVisible(!emailVisible)} currentSection={currentSection}/>
+                <Icon type={"email"} handleClick = {() => switchContactView("email")} currentSection={currentSection}/>
                 {emailVisible && (
                     <div className="contact-detail hover-this">
                         <span>{emailCopied ? 'Email address copied to your clipboard' : email_coded}</span>
@@ -44,7 +50,7 @@ export const ContactSection = ({currentSection}) => {
                 )}
             </div>
             <div className="contact-item hover-this">
-               <Icon type={"phone"} handleClick={() => setPhoneVisible(!phoneVisible)} currentSection={currentSection}/>
+               <Icon type={"phone"} handleClick={() => switchContactView("phone")} currentSection={currentSection}/>
                 {phoneVisible && (
                     <div className="contact-detail">
                         <span>{phoneNumber}</span>

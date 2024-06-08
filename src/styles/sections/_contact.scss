@@ -9,12 +9,16 @@
   width: max-content;
 
   .contact-item {
-    width: 24px;
-    height: 24px;
-    padding: .5rem;
-    margin: 0 .5rem;
     display: flex;
+    flex-direction: row;
+    margin: 0 .5rem;
     justify-content: center;
     align-items: center;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      padding: .5rem;
+    }
   }
 }

@@ -111,25 +111,25 @@ p {
     opacity: 0;
     transform: translateY(-300px); } }
 .bubble:first-of-type {
-  animation: bubble 25s linear infinite;
+  animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 0s;
   animation-delay: 0s; }
 
 .bubble:nth-of-type(2) {
+  animation: bubble 20s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 2s; }
+
+.bubble:nth-of-type(3) {
   animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 4s; }
-
-.bubble:nth-of-type(3) {
-  animation: bubble 25s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
   transition-delay: 20s;
-  animation-delay: 2s; }
+  animation-delay: 3s; }
 
 .bubble:nth-of-type(4) {
   animation: bubble 20s linear infinite;
@@ -139,14 +139,14 @@ p {
   animation-delay: 1s; }
 
 .bubble:nth-of-type(5) {
-  animation: bubble 25s linear infinite;
+  animation: bubble 10s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 2s; }
+  transition-delay: 12s;
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(6) {
-  animation: bubble 10s linear infinite;
+  animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 20s;
@@ -156,186 +156,186 @@ p {
   animation: bubble 20s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 12s;
+  transition-delay: 16s;
   animation-delay: 1s; }
 
 .bubble:nth-of-type(8) {
-  animation: bubble 5s linear infinite;
+  animation: bubble 10s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 2s; }
+  transition-delay: 12s;
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(9) {
+  animation: bubble 15s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 4s; }
+
+.bubble:nth-of-type(10) {
   animation: bubble 20s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 2s; }
-
-.bubble:nth-of-type(10) {
-  animation: bubble 5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 8s;
-  animation-delay: 3s; }
+  transition-delay: 12s;
+  animation-delay: 4s; }
 
 .bubble:nth-of-type(11) {
-  animation: bubble 5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 1s; }
-
-.bubble:nth-of-type(12) {
   animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 2s; }
+  transition-delay: 8s;
+  animation-delay: 4s; }
+
+.bubble:nth-of-type(12) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 3s; }
 
 .bubble:nth-of-type(13) {
-  animation: bubble 15s linear infinite;
+  animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 16s;
   animation-delay: 2s; }
 
 .bubble:nth-of-type(14) {
-  animation: bubble 25s linear infinite;
+  animation: bubble 20s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 16s;
-  animation-delay: 2s; }
+  transition-delay: 8s;
+  animation-delay: 3s; }
 
 .bubble:nth-of-type(15) {
   animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 2s; }
+  transition-delay: 4s;
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(16) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 3s; }
+
+.bubble:nth-of-type(17) {
   animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 12s;
-  animation-delay: 1s; }
-
-.bubble:nth-of-type(17) {
-  animation: bubble 10s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 2s; }
+  animation-delay: 4s; }
 
 .bubble:nth-of-type(18) {
-  animation: bubble 20s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 1s; }
-
-.bubble:nth-of-type(19) {
   animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 3s; }
+  transition-delay: 20s;
+  animation-delay: 1s; }
+
+.bubble:nth-of-type(19) {
+  animation: bubble 10s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 2s; }
 
 .bubble:nth-of-type(20) {
-  animation: bubble 5s linear infinite;
+  animation: bubble 20s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 4s;
   animation-delay: 1s; }
 
 .bubble:nth-of-type(21) {
-  animation: bubble 25s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 4s; }
-
-.bubble:nth-of-type(22) {
-  animation: bubble 5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 3s; }
-
-.bubble:nth-of-type(23) {
-  animation: bubble 10s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 4s; }
-
-.bubble:nth-of-type(24) {
   animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 3s; }
+  transition-delay: 20s;
+  animation-delay: 2s; }
 
-.bubble:nth-of-type(25) {
+.bubble:nth-of-type(22) {
+  animation: bubble 10s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 4s;
+  animation-delay: 1s; }
+
+.bubble:nth-of-type(23) {
   animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 8s;
   animation-delay: 1s; }
 
-.bubble:nth-of-type(26) {
-  animation: bubble 10s linear infinite;
+.bubble:nth-of-type(24) {
+  animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 8s;
-  animation-delay: 2s; }
+  transition-delay: 4s;
+  animation-delay: 4s; }
 
-.bubble:nth-of-type(27) {
-  animation: bubble 20s linear infinite;
+.bubble:nth-of-type(25) {
+  animation: bubble 10s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 16s;
-  animation-delay: 2s; }
+  animation-delay: 4s; }
 
-.bubble:nth-of-type(28) {
-  animation: bubble 10s linear infinite;
+.bubble:nth-of-type(26) {
+  animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 20s;
   animation-delay: 4s; }
+
+.bubble:nth-of-type(27) {
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 4s; }
+
+.bubble:nth-of-type(28) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 4s;
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(29) {
   animation: bubble 20s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 12s;
+  transition-delay: 4s;
   animation-delay: 4s; }
 
 .bubble:nth-of-type(30) {
-  animation: bubble 5s linear infinite;
+  animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 4s;
-  animation-delay: 1s; }
+  animation-delay: 4s; }
 
 .bubble:nth-of-type(31) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 3s; }
+
+.bubble:nth-of-type(32) {
   animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 12s;
   animation-delay: 3s; }
 
-.bubble:nth-of-type(32) {
-  animation: bubble 20s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 16s;
-  animation-delay: 3s; }
-
 .bubble:nth-of-type(33) {
-  animation: bubble 20s linear infinite;
+  animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 12s;
@@ -345,151 +345,151 @@ p {
   animation: bubble 20s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 8s;
-  animation-delay: 4s; }
+  transition-delay: 16s;
+  animation-delay: 2s; }
 
 .bubble:nth-of-type(35) {
-  animation: bubble 25s linear infinite;
+  animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 8s;
-  animation-delay: 1s; }
+  transition-delay: 20s;
+  animation-delay: 4s; }
 
 .bubble:nth-of-type(36) {
-  animation: bubble 5s linear infinite;
+  animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 4s;
-  animation-delay: 4s; }
+  animation-delay: 3s; }
 
 .bubble:nth-of-type(37) {
-  animation: bubble 25s linear infinite;
+  animation: bubble 10s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 20s;
   animation-delay: 2s; }
 
 .bubble:nth-of-type(38) {
-  animation: bubble 20s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 4s; }
-
-.bubble:nth-of-type(39) {
   animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 3s; }
+
+.bubble:nth-of-type(39) {
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
   transition-delay: 12s;
-  animation-delay: 2s; }
+  animation-delay: 3s; }
 
 .bubble:nth-of-type(40) {
   animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 16s;
-  animation-delay: 3s; }
+  transition-delay: 8s;
+  animation-delay: 2s; }
 
 .bubble:nth-of-type(41) {
   animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 12s;
-  animation-delay: 2s; }
-
-.bubble:nth-of-type(42) {
-  animation: bubble 25s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 4s;
   animation-delay: 3s; }
 
+.bubble:nth-of-type(42) {
+  animation: bubble 10s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 8s;
+  animation-delay: 2s; }
+
 .bubble:nth-of-type(43) {
-  animation: bubble 20s linear infinite;
+  animation: bubble 10s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 4s; }
+
+.bubble:nth-of-type(44) {
+  animation: bubble 10s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 20s;
+  animation-delay: 3s; }
+
+.bubble:nth-of-type(45) {
+  animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 16s;
-  animation-delay: 3s; }
-
-.bubble:nth-of-type(44) {
-  animation: bubble 20s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 1s; }
-
-.bubble:nth-of-type(45) {
-  animation: bubble 20s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 4s; }
+  animation-delay: 2s; }
 
 .bubble:nth-of-type(46) {
-  animation: bubble 5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 8s;
-  animation-delay: 3s; }
-
-.bubble:nth-of-type(47) {
   animation: bubble 25s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 8s;
-  animation-delay: 4s; }
+  transition-delay: 12s;
+  animation-delay: 3s; }
+
+.bubble:nth-of-type(47) {
+  animation: bubble 15s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 20s;
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(48) {
   animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 4s; }
-
-.bubble:nth-of-type(49) {
-  animation: bubble 20s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
   transition-delay: 20s;
   animation-delay: 2s; }
 
-.bubble:nth-of-type(50) {
-  animation: bubble 25s linear infinite;
+.bubble:nth-of-type(49) {
+  animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 4s;
   animation-delay: 4s; }
 
-.bubble:nth-of-type(51) {
-  animation: bubble 15s linear infinite;
+.bubble:nth-of-type(50) {
+  animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 3s; }
+  transition-delay: 4s;
+  animation-delay: 2s; }
 
-.bubble:nth-of-type(52) {
-  animation: bubble 5s linear infinite;
+.bubble:nth-of-type(51) {
+  animation: bubble 20s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 16s;
   animation-delay: 1s; }
 
-.bubble:nth-of-type(53) {
-  animation: bubble 20s linear infinite;
+.bubble:nth-of-type(52) {
+  animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 8s;
-  animation-delay: 4s; }
+  transition-delay: 4s;
+  animation-delay: 2s; }
+
+.bubble:nth-of-type(53) {
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 4s;
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(54) {
   animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 4s; }
+  transition-delay: 8s;
+  animation-delay: 3s; }
 
 .bubble:nth-of-type(55) {
-  animation: bubble 20s linear infinite;
+  animation: bubble 10s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 8s;
@@ -500,146 +500,146 @@ p {
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 8s;
-  animation-delay: 3s; }
+  animation-delay: 2s; }
 
 .bubble:nth-of-type(57) {
   animation: bubble 20s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 16s;
+  transition-delay: 8s;
   animation-delay: 2s; }
 
 .bubble:nth-of-type(58) {
-  animation: bubble 20s linear infinite;
+  animation: bubble 10s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 2s; }
+  transition-delay: 4s;
+  animation-delay: 1s; }
 
 .bubble:nth-of-type(59) {
-  animation: bubble 15s linear infinite;
+  animation: bubble 20s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 1s; }
+  transition-delay: 4s;
+  animation-delay: 2s; }
 
 .bubble:nth-of-type(60) {
-  animation: bubble 10s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 1s; }
-
-.bubble:nth-of-type(61) {
-  animation: bubble 25s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 2s; }
-
-.bubble:nth-of-type(62) {
-  animation: bubble 20s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 4s; }
-
-.bubble:nth-of-type(63) {
-  animation: bubble 15s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 2s; }
-
-.bubble:nth-of-type(64) {
-  animation: bubble 20s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 2s; }
-
-.bubble:nth-of-type(65) {
-  animation: bubble 10s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 1s; }
-
-.bubble:nth-of-type(66) {
-  animation: bubble 10s linear infinite;
+  animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 16s;
-  animation-delay: 3s; }
+  animation-delay: 1s; }
 
-.bubble:nth-of-type(67) {
+.bubble:nth-of-type(61) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 4s; }
+
+.bubble:nth-of-type(62) {
+  animation: bubble 10s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 8s;
+  animation-delay: 1s; }
+
+.bubble:nth-of-type(63) {
   animation: bubble 20s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 20s;
+  animation-delay: 2s; }
+
+.bubble:nth-of-type(64) {
+  animation: bubble 15s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 4s; }
+
+.bubble:nth-of-type(65) {
+  animation: bubble 15s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 4s;
+  animation-delay: 4s; }
+
+.bubble:nth-of-type(66) {
+  animation: bubble 15s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
   animation-delay: 3s; }
 
+.bubble:nth-of-type(67) {
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 1s; }
+
 .bubble:nth-of-type(68) {
+  animation: bubble 15s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 20s;
+  animation-delay: 2s; }
+
+.bubble:nth-of-type(69) {
+  animation: bubble 25s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 2s; }
+
+.bubble:nth-of-type(70) {
+  animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 2s; }
+
+.bubble:nth-of-type(71) {
+  animation: bubble 15s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 16s;
+  animation-delay: 2s; }
+
+.bubble:nth-of-type(72) {
   animation: bubble 5s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 20s;
-  animation-delay: 4s; }
+  animation-delay: 2s; }
 
-.bubble:nth-of-type(69) {
+.bubble:nth-of-type(73) {
   animation: bubble 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50%;
+  transition-delay: 12s;
+  animation-delay: 1s; }
+
+.bubble:nth-of-type(74) {
+  animation: bubble 20s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
   transition-delay: 8s;
   animation-delay: 4s; }
 
-.bubble:nth-of-type(70) {
-  animation: bubble 20s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 4s;
-  animation-delay: 2s; }
-
-.bubble:nth-of-type(71) {
-  animation: bubble 5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 1s; }
-
-.bubble:nth-of-type(72) {
+.bubble:nth-of-type(75) {
   animation: bubble 10s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 20s;
+  transition-delay: 8s;
   animation-delay: 3s; }
 
-.bubble:nth-of-type(73) {
+.bubble:nth-of-type(76) {
   animation: bubble 15s linear infinite;
   transform-box: fill-box;
   transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 3s; }
-
-.bubble:nth-of-type(74) {
-  animation: bubble 5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 20s;
-  animation-delay: 4s; }
-
-.bubble:nth-of-type(75) {
-  animation: bubble 5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 12s;
-  animation-delay: 1s; }
-
-.bubble:nth-of-type(76) {
-  animation: bubble 25s linear infinite;
-  transform-box: fill-box;
-  transform-origin: 50%;
-  transition-delay: 12s;
+  transition-delay: 16s;
   animation-delay: 4s; }
 
 .cursor {
@@ -732,12 +732,14 @@ p {
   align-items: center;
   width: max-content; }
   .contact-section .contact-item {
-    width: 24px;
-    height: 24px;
-    padding: .5rem;
-    margin: 0 .5rem;
     display: flex;
+    flex-direction: row;
+    margin: 0 .5rem;
     justify-content: center;
     align-items: center; }
+    .contact-section .contact-item svg {
+      width: 24px;
+      height: 24px;
+      padding: .5rem; }
 
 /*# sourceMappingURL=App.css.map */
