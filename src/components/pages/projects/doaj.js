@@ -1,7 +1,8 @@
 import {Button, Modal} from "react-bootstrap";
 
-export const Doaj = ({show, handleClose}) => (
-    <Modal show={show} onHide={handleClose}>
+export const Doaj = ({handleClose}) => {
+
+    return (<Modal show={true} onHide={handleClose}>
         <Modal.Header closeButton>
             <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
@@ -14,5 +15,5 @@ export const Doaj = ({show, handleClose}) => (
                 Save Changes
             </Button>
         </Modal.Footer>
-    </Modal>
-)
+    </Modal>)
+}

@@ -1,6 +1,4 @@
 .skills {
-  //background-color: $dark-blue;
-  //background-image: url("../../components/assets/skills-bg.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,6 +29,8 @@
         h3 {
           margin: 0.55rem;
           text-align: center;
+          background-color: transparent;
+          color: $white;
         }
       }
     }

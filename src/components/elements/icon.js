@@ -41,7 +41,7 @@ export const Icon = ({type, currentSection, handleClick = null}) => {
 
     const IconComponent = iconComponents[type];
     return IconComponent ? (
-        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="icon-container">
             <IconComponent stroke={determineColor()} handleClick={handleClick}/>
         </div>
     ) : null;

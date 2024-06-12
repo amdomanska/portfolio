@@ -1,37 +1,43 @@
 .projects {
+  min-height: 75vh;
   &-list {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    height: 75vh;
-    width: 75vh;
-    margin: auto;
-    //border: 1px solid rgba($dark-blue, .2);
-    //border-radius: 50%;
-
+    align-items: flex-start; // Adjust alignment as needed
+    max-width: 100%;
+    gap: 1.5rem;
+    width: 100%;
     .hover-this {
-        transition: all 0.3s ease;
-        cursor: pointer;
+      transition: all 0.3s ease;
+      cursor: pointer;
 
-        span {
-          pointer-event: none;
-          transition: transform 0.1s linear;
-        }
+      span {
+        pointer-event: none;
+        transition: transform 0.1s linear;
       }
+    }
 
 
     .project {
+      margin: 10px; // Add margin to create spacing between projects
+      position: relative;
+
       &-title {
+        text-align: center;
+      }
+
+      &-hook {
         text-align: center;
       }
 
       .tags {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 1rem;
         justify-content: center;
-        margin-top: -2rem;
+        align-items: center;
 
         .tag {
           font-family: "Julius Sans One", sans-serif;
@@ -40,5 +46,6 @@
         }
       }
     }
+
   }
 }

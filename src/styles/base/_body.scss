@@ -30,32 +30,32 @@ body {
     height: 100vh;
     min-height: 100vh;
     max-height: 100vh;
-    padding: 9.375rem;
+    padding: 9.375rem 13.875rem;
     overflow: hidden;
     box-sizing: border-box;
     transition: background 0.5s ease-in-out;
 
     .header {
-        display: flex;
-        position: relative;
-        top: 0;
-        left: 4.5rem;
-        align-items: baseline;
+      display: flex;
+      position: relative;
+      top: 0;
+      left: -4.5rem;
+      align-items: baseline;
 
-        .dot {
-          margin-right: .5rem;
-          animation: upAndDown 3s ease-in-out infinite;
-        }
-
-        &-landing,
-        &-project {
-          color: $black;
-        }
-
-        &-skills {
-          color: $white;
-        }
+      .dot {
+        margin-right: .5rem;
+        animation: upAndDown 3s ease-in-out infinite;
       }
+
+      &-landing,
+      &-project {
+        color: $black;
+      }
+
+      &-skills {
+        color: $white;
+      }
+    }
 
     .wrapper {
       max-height: calc(100vh - 18.75rem);
@@ -72,4 +72,5 @@ body {
       }
     }
   }
+
 }

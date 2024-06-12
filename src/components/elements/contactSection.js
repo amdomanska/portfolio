@@ -35,7 +35,7 @@ export const ContactSection = ({currentSection}) => {
     return (
         <div className="contact-section">
             <div className="contact-item hover-this">
-                <a href="https://www.linkedin.com/in/amdomanska" target="_blank" title="LinkedIn account link"
+                <a href="https://www.linkedin.com/in/amdomanska" target="_blank" rel="noreferrer" title="LinkedIn account link"
                    className="contact-link">
                     <Icon type={"linkedIn"} currentSection={currentSection}/>
                 </a>

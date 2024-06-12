@@ -9,6 +9,7 @@ import {colors} from "./elements/colors"
 import {Logo} from "./elements/logo";
 import {ContactSection} from "./elements/contactSection";
 import {Cursor} from "./elements/cursor";
+import {BurstDiv} from "./elements/burstDiv";
 
 export const Main = () => {
     const [currentSection, setCurrentSection] = useState(null);
