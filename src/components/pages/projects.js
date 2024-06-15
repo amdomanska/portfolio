@@ -2,12 +2,17 @@ import {useEffect, useState} from "react";
 import {projectData} from "./projects/projectpagemanager"
 import {BurstDiv} from "../elements/burstDiv";
 
-export const Projects = () => {
+export const Projects = ({onModalStatusChange}) => {
     const [projectShown, setProjectShown] = useState(null);
     const [projectDetails, setProjectDetails] = useState(null);
     var ShownComponent = null;
     if (projectShown) {
         ShownComponent = projectData[projectShown].component;
+    }
+
+    const changeProjectStatus = (status, project_id) => {
+        onModalStatusChange(status);
+        status ? setProjectShown(project_id) : setProjectShown(null);
     }
 
     return (
@@ -16,7 +21,7 @@ export const Projects = () => {
                 {Object.values(projectData).map((project, index) => (
                     <div className="row project" key={`project-link--${project.id}`}>
                         <div className="col col-md-3">
-                            <div key={index} className="hover-this" onClick={() => setProjectShown(project.id)}
+                            <div key={index} className="hover-this" onClick={() => changeProjectStatus(true, project.id)}
                                  onMouseEnter={() => setProjectDetails(project.id)}
                                  onMouseLeave={() => setProjectDetails(null)}
                                  id={`project-${project.title}`}>
@@ -38,7 +43,7 @@ export const Projects = () => {
                     </div>
                 ))}
                 {projectShown &&
-                    <ShownComponent handleClose={() => setProjectShown(null)}/>
+                    <ShownComponent handleClose={() => changeProjectStatus(false, projectShown)}/>
                 }
             </div>
         </div>

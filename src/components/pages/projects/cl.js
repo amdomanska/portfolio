@@ -1,3 +1,9 @@
-export const Cl = () => {
-    return <h1>CL</h1>
+import {ProjectWindow} from "./projectWindow";
+
+export const Cl = ({handleClose}) => {
+    return (
+        <ProjectWindow handleClose={handleClose}>
+            <h1>CL window</h1>
+        </ProjectWindow>
+    )
 }

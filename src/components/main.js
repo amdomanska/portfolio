@@ -13,6 +13,7 @@ import {BurstDiv} from "./elements/burstDiv";
 
 export const Main = () => {
     const [currentSection, setCurrentSection] = useState(null);
+    const [modalOpen, setModalOpen] = useState(false);
     const wrapperRef = useRef(null);
     const landingEndRef = useRef(null);
     const skillsEndRef = useRef(null);
@@ -92,6 +93,10 @@ const getHeader = () => {
         }
     };
 
+    const changeModalStatus = (status) => {
+        setModalOpen(status);
+    }
+
     return (
         <div className="section" style={getSectionStyles()}>
             <ContactSection currentSection={currentSection}/>
@@ -103,9 +108,9 @@ const getHeader = () => {
                     <div className="content-end" ref={landingEndRef}></div>
                     <Skills/>
                     <div className="content-end" ref={skillsEndRef}></div>
-                    <Projects/>
+                    <Projects onModalStatusChange={changeModalStatus}/>
                 </div>
-                <Cursor/>
+                {!modalOpen && <Cursor/>}
             </div>
             {currentSection === 'landing' && <LandingBg/>}
         </div>
