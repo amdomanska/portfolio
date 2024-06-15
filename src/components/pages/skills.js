@@ -1,7 +1,7 @@
 export const Skills = () => {
 
     return (
-            <div className="skills">
+            <div className="subsection skills" id="skills">
                 <div className="table">
                     <div className="ui_design">
                         <h2>ui design</h2>

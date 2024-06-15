@@ -2,7 +2,7 @@
   position: absolute;
   top: 2rem;
   right: 3rem;
-  z-index: 1000;
+  z-index: 55;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -14,7 +14,6 @@
     margin: 0 .5rem;
     justify-content: center;
     align-items: center;
-
     svg {
       width: 50%;
       height: auto;

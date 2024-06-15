@@ -10,6 +10,7 @@ export const Cursor = () => {
         };
 
         const handleMouseEnter = (e) => {
+            console.log(e.target);
             if (e.target.classList.contains('hover-this')) {
                 setIsHovered(true);
             }

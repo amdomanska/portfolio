@@ -1,17 +1,16 @@
 /*
 Error: File to import not found or unreadable: bootstrap/scss/bootstrap.
-        on line 2 of App.scss
+        on line 1 of App.scss
 
-1: @import
-2:   "bootstrap/scss/bootstrap",
-3:   "base/palette",
-4:   "base/body",
-5:   "base/text-styles",
-6: 
-7:   "elements/bubbles",
+1: @import "bootstrap/scss/bootstrap",
+2: "base/palette",
+3: "base/body",
+4: "base/text-styles",
+5: "elements/bubbles",
+6: "elements/burst",
 
 Backtrace:
-App.scss:2
+App.scss:1
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -49,4 +48,4 @@ App.scss:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: bootstrap/scss/bootstrap.\A         on line 2 of App.scss\A \A 1: @import\A 2:   \"bootstrap/scss/bootstrap\",\A 3:   \"base/palette\",\A 4:   \"base/body\",\A 5:   \"base/text-styles\",\A 6: \A 7:   \"elements/bubbles\","; }
+  content: "Error: File to import not found or unreadable: bootstrap/scss/bootstrap.\A         on line 1 of App.scss\A \A 1: @import \"bootstrap/scss/bootstrap\",\A 2: \"base/palette\",\A 3: \"base/body\",\A 4: \"base/text-styles\",\A 5: \"elements/bubbles\",\A 6: \"elements/burst\","; }

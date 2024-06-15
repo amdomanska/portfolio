@@ -22,7 +22,7 @@ body {
     position: absolute;
     top: 2rem;
     left: 3rem;
-    z-index: 1000;
+    z-index: 3;
   }
 
   .section {
@@ -34,6 +34,10 @@ body {
     overflow: hidden;
     box-sizing: border-box;
     transition: background 0.5s ease-in-out;
+
+    .subsection {
+      margin-top: 3.5rem;
+    }
 
     .header {
       display: flex;
@@ -58,6 +62,7 @@ body {
     }
 
     .wrapper {
+      z-index: 2;
       max-height: calc(100vh - 18.75rem);
       overflow-y: scroll;
       overflow-x: hidden;

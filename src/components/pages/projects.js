@@ -11,10 +11,10 @@ export const Projects = () => {
     }
 
     return (
-        <div className="projects">
+        <div className="susection projects" id="projects">
             <div className="projects-list">
                 {Object.values(projectData).map((project, index) => (
-                    <div className="row project">
+                    <div className="row project" key={`project-link--${project.id}`}>
                         <div className="col col-md-3">
                             <div key={index} className="hover-this" onClick={() => setProjectShown(project.id)}
                                  onMouseEnter={() => setProjectDetails(project.id)}

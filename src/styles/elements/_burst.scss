@@ -12,7 +12,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 
   .central-div {
     @include circle-border;
@@ -22,7 +21,7 @@
     border: $dark-blue solid 3px;
     color: $black;
     text-align: center;
-    z-index: 2;
+    z-index: 3;
 
     &--wrapper {
       @include circle-border;

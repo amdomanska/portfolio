@@ -1,7 +1,10 @@
 .landing {
-  //padding-left: 0 !important;
-  //padding-right: 0 !important;
-  //background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3.5rem;
+
   #landing_bg {
     position: absolute;
     bottom: 0;
@@ -18,5 +21,17 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+  }
+
+  .links {
+    list-style: none;
+    z-index: 10;
+
+    a {
+      color: $black;
+      font-size: 30px;
+      font-weight: 200;
+      text-decoration: none;
+    }
   }
 }
